@@ -1,4 +1,7 @@
-# Tutorial-Running-a-Guardian-Node-on-Mawari-Network-TestNet-with-VPS
+# Tutorial Running a Guardian Node on Mawari Network TestNet with VPS
+> This tutorial is based on the official documentation from Mawari: *Operating the Guardian Node Testnet*
+> Source: [https://docs.mawari.net/decentralized-infrastructure-offering-dio/operating-the-guardian-node-testnet](https://docs.mawari.net/decentralized-infrastructure-offering-dio/operating-the-guardian-node-testnet)
+
 📌 Requirements
 - VPS / Server (recommended: Ubuntu 22.04/24.04, 4+ vCPU, 8GB+ RAM).
 - SSH access (e.g., PuTTY).
