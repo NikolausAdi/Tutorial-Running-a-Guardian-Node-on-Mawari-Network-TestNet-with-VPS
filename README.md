@@ -47,60 +47,7 @@ sudo usermod -aG docker $USER
 ⚠️ Logout and log back in to apply Docker group permissions.
 
 
-## 3. Setup Environment Variables
-
-Replace `0xYOUR_WALLET_ADDRESS` with **your main wallet address** (the one holding Guardian NFTs).
-
-```bash
-export MNTESTNET_IMAGE=us-east4-docker.pkg.dev/mawarinetwork-dev/mwr-net-d-car-uses4-public-docker-registry-e62e/mawari-node:latest
-export OWNER_ADDRESS=0xYOUR_WALLET_ADDRESS
-```
-
-
-## 4. Run the Guardian Node
-
-```bash
-mkdir -p ~/mawari && docker run --pull always -v ~/mawari:/app/cache -e OWNERS_ALLOWLIST=$OWNER_ADDRESS $MNTESTNET_IMAGE
-```
-
-If successful, you should see logs like:
-
-```
-[INFO] Using burner wallet {"address": "<your_burner_wallet>"}
-```
-
-📌 Save the **burner wallet address**, it will be used for delegation.
-
-
-## 5. Transfer Tokens to Burner Wallet
-
-* Send **1 MAWARI token** from your main wallet to the **burner wallet**.
-* If you only have 1 token, request an additional token directly to your burner wallet via:
-  👉 [https://hub.testnet.mawari.net](https://hub.testnet.mawari.net)
-
-
-## 6. Activate the Guardian Node
-
-1. Open [https://app.testnet.mawari.net/](https://app.testnet.mawari.net/).
-2. Connect your main wallet.
-3. Select your Guardian NFT → click **Delegate**.
-4. Enter your **burner wallet address** → click **Delegate** again.
-5. Sign the transaction in your wallet.
-
-
-## 7. Verify Node Status
-
-* Check the VPS logs. If delegation is successful, you should see:
-
-```
-[DEBUG] received delegation offers count {"delegation offers": "1"}
-[INFO] delegation offer accepted {"hash": "..."}
-```
-
-* Or verify via the Guardian Dashboard → your node should appear as **Running** ✅.
-
-
-## 8. Run Node in Background (Optional)
+## 3. Run Node in Background (Optional)
 
 To keep the node running after closing PuTTY:
 
@@ -120,6 +67,59 @@ To reattach later:
 ```bash
 screen -r mawari
 ```
+
+
+## 4. Setup Environment Variables
+
+Replace `0xYOUR_WALLET_ADDRESS` with **your main wallet address** (the one holding Guardian NFTs).
+
+```bash
+export MNTESTNET_IMAGE=us-east4-docker.pkg.dev/mawarinetwork-dev/mwr-net-d-car-uses4-public-docker-registry-e62e/mawari-node:latest
+export OWNER_ADDRESS=0xYOUR_WALLET_ADDRESS
+```
+
+
+## 5. Run the Guardian Node
+
+```bash
+mkdir -p ~/mawari && docker run --pull always -v ~/mawari:/app/cache -e OWNERS_ALLOWLIST=$OWNER_ADDRESS $MNTESTNET_IMAGE
+```
+
+If successful, you should see logs like:
+
+```
+[INFO] Using burner wallet {"address": "<your_burner_wallet>"}
+```
+
+📌 Save the **burner wallet address**, it will be used for delegation.
+
+
+## 6. Transfer Tokens to Burner Wallet
+
+* Send **1 MAWARI token** from your main wallet to the **burner wallet**.
+* If you only have 1 token, request an additional token directly to your burner wallet via:
+  👉 [https://hub.testnet.mawari.net](https://hub.testnet.mawari.net)
+
+
+## 7. Activate the Guardian Node
+
+1. Open [https://app.testnet.mawari.net/](https://app.testnet.mawari.net/).
+2. Connect your main wallet.
+3. Select your Guardian NFT → click **Delegate**.
+4. Enter your **burner wallet address** → click **Delegate** again.
+5. Sign the transaction in your wallet.
+
+
+## 8. Verify Node Status
+
+* Check the VPS logs. If delegation is successful, you should see:
+
+```
+[DEBUG] received delegation offers count {"delegation offers": "1"}
+[INFO] delegation offer accepted {"hash": "..."}
+```
+
+* Or verify via the Guardian Dashboard → your node should appear as **Running** ✅.
 
 
 ## 🎉 Done!
