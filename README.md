@@ -1,8 +1,8 @@
 # Tutorial-Running-a-Guardian-Node-on-Mawari-Network-TestNet-with-VPS
 📌 Requirements
-VPS / Server (recommended: Ubuntu 22.04/24.04, 4+ vCPU, 8GB+ RAM).
-SSH access (e.g., PuTTY).
-A testnet wallet (e.g., MetaMask).
+- VPS / Server (recommended: Ubuntu 22.04/24.04, 4+ vCPU, 8GB+ RAM).
+- SSH access (e.g., PuTTY).
+- A testnet wallet (e.g., MetaMask).
 
 
 ## 1. Setup Wallet, Tokens, and Guardian NFT
