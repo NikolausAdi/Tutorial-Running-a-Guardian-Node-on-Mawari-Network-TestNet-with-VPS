@@ -1,4 +1,4 @@
-# Tutorial Running a Guardian Node on Mawari Network TestNet with VPS
+# Tutorial Running a Guardian Node on Mawari Network Testnet with VPS
 > This tutorial is based on the official documentation from Mawari: *Operating the Guardian Node Testnet*,
 > Source: [https://docs.mawari.net/decentralized-infrastructure-offering-dio/operating-the-guardian-node-testnet](https://docs.mawari.net/decentralized-infrastructure-offering-dio/operating-the-guardian-node-testnet)
 
@@ -14,11 +14,11 @@
    * If you don’t have one yet, create a wallet (e.g., [MetaMask](https://metamask.io/)).
    * Store your **private key & seed phrase** safely.
 
-2. **Connect Wallet to Mawari TestNet**
+2. **Connect Wallet to Mawari Testnet**
    * Open [https://testnet.mawari.net/](https://testnet.mawari.net/).
    * Click **Connect Wallet** → choose your wallet → switch to **Mawari Network TestNet**.
 
-3. **Get TestNet Tokens (MAWARI)**
+3. **Get Testnet Tokens (MAWARI)**
    * Open [https://hub.testnet.mawari.net](https://hub.testnet.mawari.net).
    * Paste your wallet address → click **Request Token**.
    * You can request up to 2 tokens per wallet.
