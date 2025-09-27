@@ -121,10 +121,8 @@ To reattach later:
 screen -r mawari
 ```
 
----
 
 ## 🎉 Done!
 
-Your Guardian Node is now running on the Mawari TestNet using your **main wallet address**.
+Your Guardian Node is now running on the Mawari Testnet using your **main wallet address**.
 
----
